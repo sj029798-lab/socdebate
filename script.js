@@ -1,402 +1,371 @@
+// ================= QUESTIONS =================
 const questions = [
-
 {
-question: "ตอนขึ้นเวทีครั้งแรก คุณจะ...",
-answer1: "เริ่มพูดด้วยความมั่นใจ",
+question: "1) เมื่อต้องไปพูดหรือนำเสนองานในหัวข้อที่คุณไม่ถนัดเลย คุณจะรับมืออย่างไร?",
+answer1: "เน้นสร้างบรรยากาศให้เป็นกันเอง ใช้บุคลิกและความมั่นใจช่วยดึงดูดความสนใจ",
 type1: "Eros",
-
-answer2: "สังเกตคู่แข่งก่อน",
+answer2: "หาประเด็นที่น่าสงสัยหรือคำถามชวนคิดมาโยนให้ผู้ฟัง มีการโต้ตอบกัน",
 type2: "Ludus",
-
-answer3: "วางโครงก่อนพูด",
+answer3: "ทำการบ้านอย่างหนัก อ่านเนื้อหาจนเข้าใจ ฝึกพูดจนคล่องก่อนก้าวขาขึ้นเวที",
 type3: "Storge"
 },
-
 {
-question: "เมื่อมีเวลาเตรียมตัวน้อย คุณจะ...",
-answer1: "พูดตาม instinct",
+question: "2) อะไรคือสิ่งที่จะทำให้คุณรู้สึกว่าการพูดหรือการนำเสนอประสบความสำเร็จ?",
+answer1: "คนฟังเดินเข้ามาชมว่า \"คุณดูดีและมีพลังมาก\" หลังจากพูดจบ",
 type1: "Eros",
-
-answer2: "คิดพลิกเกม",
+answer2: "เราสามารถคุมจังหวะและรับมือกับคำถามยากๆ ได้อย่างเหนือชั้น",
 type2: "Ludus",
-
-answer3: "วางโครงสั้นๆ",
+answer3: "เนื้อหาที่เราเตรียมมาสามารถเปลี่ยนความเข้าใจผิดของคนให้ถูกต้องได้",
 type3: "Storge"
 },
-
 {
-question: "เมื่อถึงตาคุณเริ่มพูด คุณจะ...",
-answer1: "เปิดด้วยประโยคทรงพลัง",
+question: "3) ถ้าต้องพรีเซนต์งานหน้าห้องหรือในที่ประชุม สิ่งที่คุณกังวลที่สุดคือ?",
+answer1: "กลัวพูดแล้วดูไม่น่าเชื่อถือ หรือบุคลิกภาพดูไม่เป็นมืออาชีพ",
 type1: "Eros",
-
-answer2: "เปิดด้วย twist",
+answer2: "กลัวโดนถามคำถามกวนๆ แล้วเรานึกมุกสวนกลับไม่ทัน",
 type2: "Ludus",
-
-answer3: "เปิดด้วยโครง argument",
+answer3: "กลัวข้อมูลที่เตรียมมาไม่พอ หรือพูดผิดหลักการ",
 type3: "Storge"
 },
-
 {
-question: "เมื่อคู่แข่งค้านแรง คุณจะ...",
-answer1: "โต้กลับทันที",
+question: "4) ถ้าต้องเลือก \"อุปกรณ์เสริม\" ที่ช่วยให้การสื่อสารดีขึ้น คุณจะเลือกอะไร?",
+answer1: "เสื้อผ้าที่เสริมบุคลิกภาพที่ทำให้เราดูภูมิฐานและโดดเด่น",
 type1: "Eros",
-
-answer2: "พลิกเกม",
+answer2: "สไลด์นำเสนอที่มีลูกเล่นหรือมุกตลกที่สอดแทรกไว้",
 type2: "Ludus",
-
-answer3: "วิเคราะห์เหตุผล",
+answer3: "เอกสารประกอบที่สรุปข้อมูลและตัวเลขไว้อย่างครบถ้วน",
 type3: "Storge"
 },
-
 {
-question: "เมื่อเวทีเริ่มตึงเครียด คุณจะ...",
-answer1: "เพิ่มพลัง",
+question: "5) อะไรคือสิ่งที่กระตุ้นให้คุณอยากแชร์ความคิดเห็นในวงสนทนา?",
+answer1: "ความต้องการแสดงจุดยืนและความเป็นตัวของตัวเอง",
 type1: "Eros",
-
-answer2: "สร้าง twist",
+answer2: "การได้ลองท้าทายความคิดเห็นของคนอื่นดูว่าจะโต้ตอบกลับมายังไง",
 type2: "Ludus",
-
-answer3: "พูดอย่างสงบ",
+answer3: "การเห็นคนในวงเข้าใจข้อมูลผิดๆ และอยากแก้ไขให้ถูกต้อง",
 type3: "Storge"
 },
-
 {
-question: "เวลาซ้อม คุณจะ...",
-answer1: "ฝึกพูด",
+question: "6) เวลาที่คุณเล่าเรื่องราวสักเรื่อง แล้วคนเริ่มเสียสมาธิ คุณมักจะ?",
+answer1: "ปรับระดับเสียงและจังหวะการพูดให้ตื่นเต้นขึ้น เพื่อดึงดูดสายตาคนกลับมา",
 type1: "Eros",
-
-answer2: "ฝึกโต้",
+answer2: "แกล้งถามคำถามกวนๆ หรือโยนความเห็นแย้งเพื่อให้เกิดการถกเถียง",
 type2: "Ludus",
-
-answer3: "ฝึกโครง",
+answer3: "ยกตัวอย่างเรื่องเล่าที่ใกล้ตัวและเข้าใจง่ายขึ้นเพื่อให้เห็นภาพชัดเจน",
 type3: "Storge"
 },
-
 {
-question: "เมื่อได้โจทย์ใหม่ คุณจะ...",
-answer1: "คิดวิธีพูด",
+question: "7) สไตล์การใช้ภาษาคำพูดของคุณเป็นแบบไหน?",
+answer1: "ภาษาสวยงาม มีจังหวะจะโคน และเน้นการโน้มน้าวอารมณ์",
 type1: "Eros",
-
-answer2: "หามุมใหม่",
+answer2: "ภาษาที่กระชับ ทันสมัยเอาใจวัยรุ่น และชอบใช้คำที่ชวนให้คนคิดตาม",
 type2: "Ludus",
-
-answer3: "วิเคราะห์",
+answer3: "ภาษาที่เรียบง่าย ชัดเจน และตรงไปตรงมาตามหลักการ",
 type3: "Storge"
 },
-
 {
-question: "เวลาทำงานทีม คุณจะ...",
-answer1: "สร้างแรงบันดาลใจ",
+question: "8) ในห้องเรียน คุณมักจะมีบุคลิกแบบไหน?",
+answer1: "นั่งหน้าสุด มีความมั่นใจ และมักจะได้รับความสนใจจากคนรอบข้างเสมอ",
 type1: "Eros",
-
-answer2: "เสนอไอเดีย",
+answer2: "สายซุ่ม ชอบสังเกตการณ์ และคอยโยนมุกหรือประเด็นที่เพื่อนคาดไม่ถึง",
 type2: "Ludus",
-
-answer3: "จัดระบบ",
+answer3: "นั่งจดรายละเอียด และให้ความสำคัญกับการทำความเข้าใจเนื้อหา",
 type3: "Storge"
 },
-
 {
-question: "เวลาทำ argument คุณจะ...",
-answer1: "เน้น impact",
+question: "9) ถ้าต้องแก้ตัวในเรื่องที่คุณทำผิด คุณจะใช้วิธีไหน?",
+answer1: "แสดงความเสียใจอย่างสุดซึ้งและใช้วาทศิลป์ให้คนฟังเห็นใจเรา",
 type1: "Eros",
-
-answer2: "เน้น surprise",
+answer2: "พยายามเบี่ยงเบนประเด็นหรือหาข้ออ้างที่เป็นตรรกะความคิดที่คนเถียงยาก",
 type2: "Ludus",
-
-answer3: "เน้น logic",
+answer3: "อธิบายที่มาที่ไปตามความจริง และยอมรับผิดอย่างสุภาพ",
 type3: "Storge"
 },
-
 {
-question: "ก่อนแข่ง คุณจะ...",
-answer1: "ซ้อมพูด",
+question: "10) คุณอยากให้คนจดจำ \"การสื่อสาร\" ของคุณในลักษณะไหน?",
+answer1: "\"ตราตรึงใจ\" พูดแล้วคนประทับใจในตัวตนและเสน่ห์",
 type1: "Eros",
-
-answer2: "ซ้อมโต้",
+answer2: "\"เฉียบแหลม\" พูดแล้วคนทึ่งในไหวพริบและการแก้เกม",
 type2: "Ludus",
-
-answer3: "ทบทวนโครง",
+answer3: "\"มั่นคง\" พูดแล้วคนรู้สึกเชื่อถือและไว้วางใจในข้อมูล",
 type3: "Storge"
 },
-
 {
-question: "นักโต้วาทีที่ดีควร...",
-answer1: "ดึงดูดคนฟัง",
+question: "11) เมื่อมีคนแย้งความเห็นของคุณกลางที่สาธารณะ คุณรู้สึกอย่างไร?",
+answer1: "รู้สึกโดนท้าทาย และอยากจะตอบกลับไปให้ดูเท่และชนะใจ",
 type1: "Eros",
-
-answer2: "พลิกเกม",
+answer2: "รู้สึกสนุกและอยากจะใช้คำถามย้อนกลับไปเพื่อให้เขาตกใจรับมือไม่ถูก",
 type2: "Ludus",
-
-answer3: "มีเหตุผล",
+answer3: "ไม่รู้สึกอะไร แต่จะตั้งใจฟังเพื่อดูว่าเหตุผลที่เขาแย้งมานั้นมีน้ำหนักแค่ไหน",
 type3: "Storge"
 },
-
 {
-question: "เวลาพูด คุณจะ...",
-answer1: "ใช้อารมณ์",
+question: "12) ถ้าคนอื่นใช้อารมณ์ใส่คุณ คุณจะรับมือยังไง?",
+answer1: "ใช้ความสงบนิ่งสยบอารมณ์เขา เพื่อให้เขารู้สึกว่าไม่ควรใช้อารมณ์ต่อ",
 type1: "Eros",
-
-answer2: "ใช้ไหวพริบ",
+answer2: "ยิ้มสู้แล้วใช้คำพูดจิกกัดหรือประชดเล็กน้อยเพื่อให้บรรยากาศดูเบาลง",
 type2: "Ludus",
-
-answer3: "ใช้เหตุผล",
+answer3: "ใจเย็นและพยายามดึงบทสนทนากลับเข้าสู่ประเด็นที่เป็นเหตุเป็นผล",
 type3: "Storge"
 },
-
 {
-question: "จุดแข็งของคุณคือ...",
-answer1: "การพูด",
+question: "13) เทคนิคที่คุณมักจะใช้เพื่อชนะในการถกเถียงคืออะไร?",
+answer1: "การใช้อารมณ์ร่วมและความรู้สึกที่จริงใจจนคนฟังต้องคล้อยตาม",
 type1: "Eros",
-
-answer2: "การโต้",
+answer2: "การจับผิดคำพูดของอีกฝ่าย แล้วย้อนกลับไปมัดตัวเขาเอง",
 type2: "Ludus",
-
-answer3: "การวิเคราะห์",
+answer3: "การกางสถิติ ข้อมูล หรือความถูกต้องที่ใครก็เถียงไม่ได้",
 type3: "Storge"
 },
-
 {
-question: "เมื่อไม่เห็นด้วย คุณจะ...",
-answer1: "โต้ทันที",
+question: "14) หลังจากการถกเถียงจบลง คุณมักจะจบด้วยท่าทีแบบไหน?",
+answer1: "จบด้วยความประทับใจ และรักษาสัมพันธ์ที่ดีไว้เสมอ",
 type1: "Eros",
-
-answer2: "พลิก argument",
+answer2: "จบด้วยการทำให้เขารู้สึกว่าเขาแพ้ทางคุณ",
 type2: "Ludus",
-
-answer3: "อธิบายเหตุผล",
+answer3: "จบด้วยการสรุปสิ่งที่ได้เรียนรู้และทำความเข้าใจตรงกัน",
 type3: "Storge"
 },
-
 {
-question: "นักโต้วาทีในฝันคือ...",
-answer1: "นักพูดทรงพลัง",
+question: "15) คุณอยากให้คนรอบข้างพูดถึงการสื่อสารของคุณว่าอย่างไร?",
+answer1: "เป็นคนมีเสน่ห์ พูดจาน่าฟัง และดึงดูดใจ",
 type1: "Eros",
-
-answer2: "นักพลิกเกม",
+answer2: "เป็นคนฉลาด มีไหวพริบ และคุยด้วยแล้วสนุก",
 type2: "Ludus",
-
-answer3: "นักวิเคราะห์",
+answer3: "เป็นคนน่าเชื่อถือ จริงใจ และคุยด้วยแล้วสบายใจ",
 type3: "Storge"
 }
-
 ];
 
-
-let scores = {
-Eros:0,
-Ludus:0,
-Storge:0
-};
-
+// ================= LOGIC =================
+let scores = {Eros:0, Ludus:0, Storge:0};
 let currentQuestion = 0;
 
 const questionEl = document.querySelector('.question');
 const option1 = document.querySelector('.option1');
 const option2 = document.querySelector('.option2');
 const option3 = document.querySelector('.option3');
-
-const progress = document.getElementById("current");
-
 const nextButton = document.querySelector('.next');
 const result = document.querySelector('.result');
 const container = document.querySelector('.quiz-container');
+const progress = document.getElementById("current");
 
+// ================= START QUIZ =================
+function startQuiz() {
+  const introContainer = document.querySelector('.intro-container');
+  introContainer.style.display = 'none';
+  container.classList.add('active');
+  generateQuestions(currentQuestion);
+}
 
 function generateQuestions(index){
-    progress.innerHTML = index + 1;
+progress.innerHTML = index+1;
 
-let question = questions[index];
+let q = questions[index];
 
-questionEl.innerHTML = question.question;
+questionEl.innerHTML = q.question;
+option1.innerHTML = q.answer1;
+option2.innerHTML = q.answer2;
+option3.innerHTML = q.answer3;
 
-option1.innerHTML = question.answer1;
-option2.innerHTML = question.answer2;
-option3.innerHTML = question.answer3;
-
-option1.setAttribute("data-type",question.type1);
-option2.setAttribute("data-type",question.type2);
-option3.setAttribute("data-type",question.type3);
-
+option1.setAttribute("data-type",q.type1);
+option2.setAttribute("data-type",q.type2);
+option3.setAttribute("data-type",q.type3);
 }
-
 
 function loadNextQuestion(){
+const selected = document.querySelector('input[type="radio"]:checked');
 
-const selectedOption = document.querySelector('input[type="radio"]:checked');
+if(!selected){ alert("กรุณาเลือกคำตอบ"); return;}
 
-if(!selectedOption){
-alert("กรุณาเลือกคำตอบ");
-return;
-}
-
-let selectedType = selectedOption.nextElementSibling.getAttribute("data-type");
-
-scores[selectedType]++;
+let type = selected.nextElementSibling.getAttribute("data-type");
+scores[type]++;
 
 currentQuestion++;
+selected.checked = false;
 
-selectedOption.checked = false;
-
-if(currentQuestion == questions.length){
-
+if(currentQuestion >= questions.length){
 showResult();
 return;
-
 }
 
 generateQuestions(currentQuestion);
-
 }
 
-
+// ================= RESULT =================
 function showResult(){
 
-container.style.display = "none";
+container.style.display="none";
 
 let sorted = Object.entries(scores).sort((a,b)=>b[1]-a[1]);
-
 let first = sorted[0][0];
 let second = sorted[1][0];
-
 let diff = sorted[0][1]-sorted[1][1];
 
-let finalResult;
+let final;
 
 if(diff<=1){
-
-if((first=="Eros" && second=="Ludus") || (first=="Ludus" && second=="Eros")){
-finalResult="Mania";
+if((first=="Eros" && second=="Ludus")||(first=="Ludus"&&second=="Eros")) final="mania";
+else if((first=="Ludus"&&second=="Storge")||(first=="Storge"&&second=="Ludus")) final="pragma";
+else final="agape";
+}else{
+final = first.toLowerCase();
 }
 
-else if((first=="Ludus" && second=="Storge") || (first=="Storge" && second=="Ludus")){
-finalResult="Pragma";
+displayResult(final);
 }
-
-else{
-finalResult="Agape";
-}
-
-}
-else{
-
-finalResult=first;
-
-}
-
-displayResult(finalResult);
-
-}
-
-
 
 function displayResult(type){
 
 const results = {
+eros:{class:"eros",color:"#e53935",mainColor:"#ff4d4d",title:"EROS",tagline:"The Charismatic Debater",img:"แดง.png",
+personality:"คุณคือ \"หนูนักโต้วาทีสายเสน่ห์\"",
+personalityDesc:"ไม่ใช่แค่การพูด แต่คือการโชว์! คุณคือนิยามของความมั่นใจที่มาพร้อมออร่าดึงดูดสายตา ทุกถ้อยคำมีจริตและพลังที่ทำให้คนฟังเคลิ้มตามได้ไม่ยาก เหมือนนั่งดูโชว์ระดับตำนานที่พลาดไม่ได้แม้แต่วินาทีเดียว",
+strengths:[{icon:"👤",title:"ตัวแม่",desc:"โดดเด่นและน่าสังเกตการณ์"},{icon:"💭",title:"มั่นใจ",desc:"ยืดหยุ่นและปรับตัวได้ดี"},{icon:"💓",title:"สะกดสายตา",desc:"ทำให้คนรู้สึกดีและไว้ใจ"}],
+archetypes:[{name:"อั้ม พัชราภา",img:"แม่อั้ม.jpg"},{name:"ใหม่ ดาวิกา",img:"ใหม่.jpg"},{name:"เจฟ ซาเตอร์",img:"พี่เจฟ.jpg"}]},
 
-Eros:`
-<div class="result-card eros">
-<img src="logo.png" class="logo">
-<img src="Eros.png" class="result-img">
-<h2>Eros - นักพูดสายเสน่ห์</h2>
-<div class="traits">
-<span>คาริสมาแรง</span>
-<span>ดึงดูดคนฟัง</span>
-<span>พูดลื่น</span>
-</div>
-<div class="result-box">
-Eros คือเสียงที่ทำให้คนฟัง "รู้สึก" ก่อนเชื่อเหตุผล
-</div>
-</div>
-`,
+ludus:{class:"ludus",color:"#3949ab",mainColor:"#3b82f6",title:"LUDUS",tagline:"The Strategic Player",img:"น้ำเงิน.png",
+personality:"คุณคือ \"หนูนักโต้วาทีสายกลยุทธ์\"",
+personalityDesc:"เกมนี้ใครคุม? คุณคือนักวางกลยุทธ์ที่มีไหวพริบแพรวพราว ยิงคำถามทีเดียวมีหนาว! คุณรู้จังหวะรุก-รับ และเปลี่ยนเรื่องเครียดให้กลายเป็นเรื่องสนุกได้อย่างน่าเหลือเชื่อ",
+strengths:[{icon:"🧠",title:"แพรวพราว",desc:"ปัญญาอ่อนแหลม"},{icon:"⚡",title:"ไหวพริบดี",desc:"คิดแกว่งเร็ว"},{icon:"🎮",title:"มีชั้นเชิง",desc:"เล่นเกมได้ดี"}],
+archetypes:[{name:"หนุ่ม กรรชัย",img:"พี่หนุ่ม.jpg"},{name:"น้าเน็ก",img:"น้าเน็ก.jpg"},{name:"Tobii",img:"tobii.jpeg"}]},
 
-Ludus:`
-<div class="result-card ludus">
-<img src="logo.png" class="logo">
-<img src="Ludus.png" class="result-img">
-<h2>Ludus - นักพูดสายเจ้าเล่ห์</h2>
-<div class="traits">
-<span>พลิกเกม</span>
-<span>ไหวพริบ</span>
-<span>ฉลาด</span>
-</div>
-<div class="result-box">
-Ludus คือผู้พลิกเกมบนเวทีโต้วาที
-</div>
-</div>
-`,
+storge:{class:"storge",color:"#fbc02d",mainColor:"#facc15",title:"STORGE",tagline:"The Reliable Narrator",img:"เหลือง.png",
+personality:"คุณคือ \"หนูนักโต้วาทีสายเล่าเรื่อง\"",
+personalityDesc:"ผู้ฟังสบายใจทุกครั้งที่ได้ฟัง เพราะคุณเน้นการสื่อสารที่เป็นกันเองและอบอุ่นเหมือนคนในครอบครัว แต่แฝงไปด้วยความจริงใจที่ทำให้คนไว้วางใจได้ทันที ไม่เน้นการปะทะด้วยอารมณ์แต่เน้นการสร้างความเข้าใจ",
+strengths:[{icon:"📚",title:"จริงใจ",desc:"ความรู้ลึกซึ้ง"},{icon:"✓",title:"เป็นกันเอง",desc:"ถูกต้องเที่ยงแท้"},{icon:"🛡️",title:"ไว้ใจได้",desc:"มั่นคง น่าเชื่อถือ"}],
+archetypes:[{name:"มะเดี่ยว",img:"มะเดี่ยว.jpg"},{name:"รัชโย",img:"รัชโย.jpg"},{name:"น้องเกล",img:"น้องเกล.jpg"}]},
 
-Storge:`
-<div class="result-card storge">
-<img src="logo.png" class="logo">
-<img src="Storage.png" class="result-img">
-<h2>Storge - นักพูดสายอบอุ่น</h2>
-<div class="traits">
-<span>สุภาพ</span>
-<span>มั่นคง</span>
-<span>เหตุผล</span>
-</div>
-<div class="result-box">
-Storge พูดเพื่อให้ทุกคนเข้าใจ
-</div>
-</div>
-`,
+mania:{class:"mania",color:"#8e24aa",mainColor:"#a855f7",title:"MANIA",tagline:"The Passionate Powerhouse",img:"ม่วง.png",
+personality:"คุณคือ \"หนูนักโต้วาทีสายปลุกใจ\"",
+personalityDesc:"การพูดที่ไม่ใส่อารมณ์ ก็เหมือนแกงที่ไม่ใส่พริก! คุณคือตัวจี๊ดที่พร้อมจะใส่จิตวิญญาณเพื่อกระตุ้นความรู้สึกคนฟังให้ลุกเป็นไฟ พร้อมสร้างประเด็นที่คนต้องเอาไปพูดต่อจนขึ้นเทรนด์",
+strengths:[{icon:"🔥",title:"สร้างกระแส",desc:"พลังเต็มท่า"},{icon:"❤️",title:"ปลุกอารมณ์",desc:"หลงใหลจริงใจ"},{icon:"⚔️",title:"เป็นไวรัล",desc:"ไม่ยอมแพ้"}],
+archetypes:[{name:"พี่เต้พระราม7",img:"พี่เต้.jpg"},{name:"ดาด้า มิสแกรนด์กาฬสินธุ์",img:"ดาด้า.jpg"},{name:"ครูเงาะ",img:"ครูเงาะ.jpg"}]},
 
-Mania:`
-<div class="result-card mania">
-<img src="logo.png" class="logo">
-<img src="Mania.png" class="result-img">
-<h2>Mania - นักพูดสายไฟแรง</h2>
-<div class="traits">
-<span>พลังสูง</span>
-<span>อารมณ์</span>
-<span>เข้มข้น</span>
-</div>
-<div class="result-box">
-Mania คือพลังของเวที
-</div>
-</div>
-`,
+pragma:{class:"pragma",color:"#43a047",mainColor:"#22c55e",title:"PRAGMA",tagline:"The Rational Architect",img:"เขียว.png",
+personality:"คุณคือ \"หนูนักโต้วาทีสายเหตุผล\"",
+personalityDesc:"ทุกคำพูดมีที่มา ทุกเนื้อหาเป๊ะตามโครงสร้าง คุณคือสถาปนิกทางความคิดที่วางข้อมูลแบบเป็นขั้นเป็นตอน ไม่พูดลอยๆแต่จะทำให้คุณเห็นภาพรวมด้วยเหตุและผลที่เถียงไม่ออก ถ้าอยากได้เนื้อหาแน่นๆ ข้อมูลเน้นๆ ต้องยกให้คุณเลย",
+strengths:[{icon:"⚖️",title:"ข้อมูลแน่น",desc:"ดุลยภาค และเป็นธรรม"},{icon:"🔍",title:"ตรรกะเป๊ะ",desc:"วิเคราะห์อย่างลึก"},{icon:"📊",title:"เน้นโครงสร้าง",desc:"ใช้เหตุผล"}],
+archetypes:[{name:"พี่วิว Point of View",img:"พี่วิว.jpg"},{name:"เฮียวิทย์",img:"เฮียวิทย์.jpg"},{name:"พี่ปั้น SmartMathPro",img:"พี่ปั้น.jpg"}]},
 
-Pragma:`
-<div class="result-card pragma">
-<img src="logo.png" class="logo">
-<img src="Pragma.png" class="result-img">
-<h2>Pragma - นักพูดสายเหตุผล</h2>
-<div class="traits">
-<span>วิเคราะห์</span>
-<span>ระบบ</span>
-<span>แม่นยำ</span>
-</div>
-<div class="result-box">
-Pragma คือสมองของทีม
-</div>
-</div>
-`,
+agape:{class:"agape",color:"#fb8c00",mainColor:"#fb923c",title:"AGAPE",tagline:"The Inspiring Idealist",img:"ส้ม.png",
+personality:"คุณคือ \"หนูนักโต้วาทีสายสร้างแรงบันดาลใจ\"",
+personalityDesc:"พูดเพื่อสร้าง ไม่ใช่เพื่อทำลาย คุณคือนักสร้างแรงบันดาลใจที่มาพร้อมพลังบวกมหาศาล เพื่อส่วนรวม ทุกคำพูดคือการให้ที่มุ่งหวังจะเปลี่ยนโลกให้ดีขึ้นและปลุกใจให้ทุกคนลุกขึ้นมาสู้",
+strengths:[{icon:"🌟",title:"สร้างพลังบวก",desc:"แรงบันดาลใจอยู่เสมอ"},{icon:"🎯",title:"แรงบันดาลใจ",desc:"มีเป้าหมายชัดเจน"},{icon:"🤝",title:"เพื่อส่วนรวม",desc:"รวมคนไว้ด้วยกัน"}],
+archetypes:[{name:"ผู้ว่าชัชชาติ",img:"ท่านชัชชาติ.jpg"},{name:"พิมรี่พาย",img:"พิมรี่พาย.jpg"},{name:"พี่ภูผา Mr.Phoops",img:"พี่ภูผา.jpg"}]}
+};
 
-Agape:`
-<div class="result-card agape">
-<img src="logo.png" class="logo">
-<img src="Agape.png" class="result-img">
-<h2>Agape - นักพูดสายอุดมการณ์</h2>
-<div class="traits">
-<span>แรงบันดาลใจ</span>
-<span>มองภาพใหญ่</span>
-<span>พลังบวก</span>
-</div>
-<div class="result-box">
-Agape คือเสียงสุดท้ายของเวที
-</div>
-</div>
-`
+const r = results[type];
 
+document.body.style.background = r.mainColor;
+
+result.innerHTML = `
+<div class="result-card ${r.class}">
+
+<div class="result-banner">
+<img src="${r.img}" class="character-result">
+</div>
+
+<div class="result-content">
+
+<h1 class="result-title">${r.title}</h1>
+<p class="result-subtitle">${r.tagline}</p>
+
+<div class="result-section personality-section">
+<div class="section-header">
+<span class="icon-heart">❤️</span>
+<h2>Personality</h2>
+</div>
+<h3>${r.personality}</h3>
+<p>${r.personalityDesc}</p>
+</div>
+
+<div class="result-section strengths-section">
+<div class="section-header">
+<span class="icon-star">⭐</span>
+<h2>Strengths</h2>
+</div>
+<div class="strengths-grid">
+${r.strengths.map(s=>`
+<div class="strength-item">
+<div class="strength-icon">${s.icon}</div>
+<p class="strength-title">${s.title}</p>
+</div>`).join("")}
+</div>
+</div>
+
+<div class="archetypes-section">
+<div class="section-header">
+<span class="icon-spark">✨</span>
+<h2>Archetypes</h2>
+</div>
+<div class="people-grid">
+${r.archetypes.map(p=>`
+<div class="person">
+<img src="${p.img}" class="person-img">
+<p class="person-name">${p.name}</p>
+</div>`).join("")}
+</div>
+</div>
+
+<button class="share-btn" onclick="captureAndShare()">แชร์ผลลัพธ์</button>
+
+</div>
+
+</div>
+`;
 }
 
-result.innerHTML = results[type];
-
-}
-
-
-generateQuestions(currentQuestion);
+// ================= START =================
 nextButton.addEventListener("click",loadNextQuestion);
 
+// ================= CAPTURE & SHARE =================
+async function captureAndShare() {
+  const resultCard = document.querySelector('.result-card');
+  
+  try {
+    // แสดง loading message
+    const btn = document.querySelector('.share-btn');
+    const originalText = btn.textContent;
+    btn.textContent = 'กำลังบันทึก...';
+    btn.disabled = true;
+    
+    // Capture รูป result card
+    const canvas = await html2canvas(resultCard, {
+      backgroundColor: '#ffffff',
+      scale: 2,
+      useCORS: true,
+      logging: false
+    });
+    
+    // แปลง canvas เป็น image
+    canvas.toBlob(function(blob) {
+      // สร้าง URL จาก blob
+      const url = URL.createObjectURL(blob);
+      
+      // สร้าง download link
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `debate-personality-${new Date().getTime()}.png`;
+      
+      // Click link เพื่อ download
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // ปล่อย URL
+      URL.revokeObjectURL(url);
+      
+      // หลังจาก 1 วินาที จึงกลับไปหน้าแรก
+      setTimeout(() => {
+        location.reload();
+      }, 1000);
+    }, 'image/png');
+    
+  } catch (error) {
+    console.error('Error capturing image:', error);
+    alert('ขออภัย เกิดข้อผิดพลาดในการบันทึกรูป');
+    btn.textContent = originalText;
+    btn.disabled = false;
+  }
+}

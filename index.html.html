@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soc Debate Personality Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div class="intro-container">
+  <img src="logo.png" class="intro-logo">
+  <h1 class="intro-title">คุณเป็นหนูนักโต้วาทีแบบไหน</h1>
+  <p class="intro-subtitle">แบบไหนกันน้าาาา???</p>
+  
+  <div class="characters-grid">
+    <div class="char-item">
+      <img src="แดง.png" alt="EROS">
+    </div>
+    <div class="char-item">
+      <img src="เหลือง.png" alt="STORGE">
+    </div>
+    <div class="char-item">
+      <img src="น้ำเงิน.png" alt="LUDUS">
+    </div>
+    <div class="char-item">
+      <img src="ส้ม.png" alt="AGAPE">
+    </div>
+    <div class="char-item">
+      <img src="ม่วง.png" alt="MANIA">
+    </div>
+    <div class="char-item">
+      <img src="เขียว.png" alt="PRAGMA">
+    </div>
+  </div>
+  
+  
+  <button class="start-btn" onclick="startQuiz()">เริ่มทำแบบทดสอบ</button>
+</div>
+
 <div class="quiz-container">
 
 <img src="logo.png" class="logo">
 
-<h1 class="quiz-title">คุณเป็นนักโต้วาทีแบบไหน</h1>
+<h1 class="quiz-title">คุณเป็นหนูนักโต้วาทีแบบไหน</h1>
 
 <div class="progress">
 ข้อ <span id="current">1</span> / 15
@@ -45,6 +76,7 @@
 
 <div class="result"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="script.js"></script>
 
 </body>
