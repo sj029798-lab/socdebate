@@ -235,7 +235,8 @@ background:#ff5252;
   padding: 20px;
   border-radius: 15px;
   text-align: left;
-  background: #f8f9fa;
+  background: #fff0c6;
+  border: 1px solid #f5d287;
 }
 
 .section-header {
@@ -339,18 +340,41 @@ background:#ff5252;
   color: #333;
 }
 
-/* ===== Share Button ===== */
-.share-btn {
-  width: 100%;
-  padding: 14px;
+/* ===== Share Buttons ===== */
+.result-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.share-buttons-container {
+  display: flex;
+  gap: 10px;
+  margin: 14px 24px 20px;
+}
+
+.share-btn,
+.share-friend-btn {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px 14px;
   border: none;
-  border-radius: 20px;
-  font-size: 16px;
+  border-radius: 18px;
+  font-size: 14px;
   font-weight: 700;
   color: white;
   cursor: pointer;
   transition: 0.3s;
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Itim', 'Prompt', sans-serif;
+}
+
+.share-btn {
+  background: linear-gradient(135deg, #fb7185, #e11d48);
 }
 
 .share-btn:hover {
@@ -359,6 +383,19 @@ background:#ff5252;
 }
 
 .share-btn:active {
+  transform: translateY(0);
+}
+
+.share-friend-btn {
+  background: linear-gradient(135deg, #e1306c, #c13584);
+}
+
+.share-friend-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(225, 48, 108, 0.3);
+}
+
+.share-friend-btn:active {
   transform: translateY(0);
 }
 
@@ -404,6 +441,10 @@ background:#ff5252;
   background: linear-gradient(135deg, #ff5252, #c62828);
 }
 
+.result-card.eros .share-friend-btn {
+  background: linear-gradient(135deg, #e1306c, #c13584);
+}
+
 /* 🔵 Ludus - Blue */
 .result-card.ludus {
   background: #f0f7ff;
@@ -442,6 +483,10 @@ background:#ff5252;
 
 .result-card.ludus .share-btn:hover {
   background: linear-gradient(135deg, #2196f3, #0d47a1);
+}
+
+.result-card.ludus .share-friend-btn {
+  background: linear-gradient(135deg, #e1306c, #c13584);
 }
 
 /* 🟡 Storge - Yellow */
@@ -484,6 +529,10 @@ background:#ff5252;
   background: linear-gradient(135deg, #fad92e, #e65100);
 }
 
+.result-card.storge .share-friend-btn {
+  background: linear-gradient(135deg, #e1306c, #c13584);
+}
+
 /* 🟣 Mania - Purple */
 .result-card.mania {
   background: #faf5ff;
@@ -522,6 +571,10 @@ background:#ff5252;
 
 .result-card.mania .share-btn:hover {
   background: linear-gradient(135deg, #ab47bc, #6a1b9a);
+}
+
+.result-card.mania .share-friend-btn {
+  background: linear-gradient(135deg, #e1306c, #c13584);
 }
 
 /* 🟢 Pragma - Green */
@@ -564,6 +617,10 @@ background:#ff5252;
   background: linear-gradient(135deg, #26a69a, #004d40);
 }
 
+.result-card.pragma .share-friend-btn {
+  background: linear-gradient(135deg, #e1306c, #c13584);
+}
+
 /* 🟠 Agape - Orange */
 .result-card.agape {
   background: #fff8f3;
@@ -602,6 +659,10 @@ background:#ff5252;
 
 .result-card.agape .share-btn:hover {
   background: linear-gradient(135deg, #ffa726, #d84315);
+}
+
+.result-card.agape .share-friend-btn {
+  background: linear-gradient(135deg, #e1306c, #c13584);
 }
 .inspired{
 margin-top:20px;
@@ -702,6 +763,20 @@ margin-top:5px;
 
   .person-img {
     height: 150px;
+  }
+
+  .share-buttons-container {
+    gap: 10px;
+  }
+
+  .share-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .share-friend-btn {
+    padding: 12px;
+    font-size: 15px;
   }
 }
 
@@ -860,9 +935,21 @@ margin-top:5px;
     font-size: 12px;
   }
 
+  .share-buttons-container {
+    display: flex;
+    gap: 8px;
+  }
+
   .share-btn {
-    padding: 12px;
-    font-size: 15px;
+    flex: 1;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .share-friend-btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 13px;
   }
 
   .next {

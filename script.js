@@ -219,40 +219,34 @@ function displayResult(type){
 
 const results = {
 eros:{class:"eros",color:"#e53935",mainColor:"#ff4d4d",title:"EROS",tagline:"The Charismatic Debater",img:"แดง.png",
-personality:"คุณคือ \"หนูนักโต้วาทีสายเสน่ห์\"",
+personality:"คุณคือ \"หนูนักพูดสายเสน่ห์\"",
 personalityDesc:"ไม่ใช่แค่การพูด แต่คือการโชว์! คุณคือนิยามของความมั่นใจที่มาพร้อมออร่าดึงดูดสายตา ทุกถ้อยคำมีจริตและพลังที่ทำให้คนฟังเคลิ้มตามได้ไม่ยาก เหมือนนั่งดูโชว์ระดับตำนานที่พลาดไม่ได้แม้แต่วินาทีเดียว",
-strengths:[{icon:"👤",title:"ตัวแม่",desc:"โดดเด่นและน่าสังเกตการณ์"},{icon:"💭",title:"มั่นใจ",desc:"ยืดหยุ่นและปรับตัวได้ดี"},{icon:"💓",title:"สะกดสายตา",desc:"ทำให้คนรู้สึกดีและไว้ใจ"}],
-archetypes:[{name:"อั้ม พัชราภา",img:"แม่อั้ม.jpg"},{name:"ใหม่ ดาวิกา",img:"ใหม่.jpg"},{name:"เจฟ ซาเตอร์",img:"พี่เจฟ.jpg"}]},
+strengths:[{icon:"👤",title:"ตัวแม่",desc:"โดดเด่นและน่าสังเกตการณ์"},{icon:"💭",title:"มั่นใจ",desc:"ยืดหยุ่นและปรับตัวได้ดี"},{icon:"💓",title:"สะกดสายตา",desc:"ทำให้คนรู้สึกดีและไว้ใจ"}]},
 
 ludus:{class:"ludus",color:"#3949ab",mainColor:"#3b82f6",title:"LUDUS",tagline:"The Strategic Player",img:"น้ำเงิน.png",
-personality:"คุณคือ \"หนูนักโต้วาทีสายกลยุทธ์\"",
+personality:"คุณคือ \"หนูนักพูดสายกลยุทธ์\"",
 personalityDesc:"เกมนี้ใครคุม? คุณคือนักวางกลยุทธ์ที่มีไหวพริบแพรวพราว ยิงคำถามทีเดียวมีหนาว! คุณรู้จังหวะรุก-รับ และเปลี่ยนเรื่องเครียดให้กลายเป็นเรื่องสนุกได้อย่างน่าเหลือเชื่อ",
-strengths:[{icon:"🧠",title:"แพรวพราว",desc:"ปัญญาอ่อนแหลม"},{icon:"⚡",title:"ไหวพริบดี",desc:"คิดแกว่งเร็ว"},{icon:"🎮",title:"มีชั้นเชิง",desc:"เล่นเกมได้ดี"}],
-archetypes:[{name:"หนุ่ม กรรชัย",img:"พี่หนุ่ม.jpg"},{name:"น้าเน็ก",img:"น้าเน็ก.jpg"},{name:"Tobii",img:"tobii.jpeg"}]},
+strengths:[{icon:"🧠",title:"แพรวพราว",desc:"ปัญญาอ่อนแหลม"},{icon:"⚡",title:"ไหวพริบดี",desc:"คิดแกว่งเร็ว"},{icon:"🎮",title:"มีชั้นเชิง",desc:"เล่นเกมได้ดี"}]},
 
-storge:{class:"storge",color:"#fbc02d",mainColor:"#facc15",title:"STORGE",tagline:"The Reliable Narrator",img:"เหลือง.png",
-personality:"คุณคือ \"หนูนักโต้วาทีสายเล่าเรื่อง\"",
+storge:{class:"storge",color:"#ffcc00",mainColor:"#ffcc00",title:"STORGE",tagline:"The Reliable Narrator",img:"เหลือง.png",
+personality:"คุณคือ \"หนูนักพูดสายเม้ามอย\"",
 personalityDesc:"ผู้ฟังสบายใจทุกครั้งที่ได้ฟัง เพราะคุณเน้นการสื่อสารที่เป็นกันเองและอบอุ่นเหมือนคนในครอบครัว แต่แฝงไปด้วยความจริงใจที่ทำให้คนไว้วางใจได้ทันที ไม่เน้นการปะทะด้วยอารมณ์แต่เน้นการสร้างความเข้าใจ",
-strengths:[{icon:"📚",title:"จริงใจ",desc:"ความรู้ลึกซึ้ง"},{icon:"✓",title:"เป็นกันเอง",desc:"ถูกต้องเที่ยงแท้"},{icon:"🛡️",title:"ไว้ใจได้",desc:"มั่นคง น่าเชื่อถือ"}],
-archetypes:[{name:"มะเดี่ยว",img:"มะเดี่ยว.jpg"},{name:"รัชโย",img:"รัชโย.jpg"},{name:"น้องเกล",img:"น้องเกล.jpg"}]},
+strengths:[{icon:"📚",title:"จริงใจ",desc:"ความรู้ลึกซึ้ง"},{icon:"✓",title:"เป็นกันเอง",desc:"ถูกต้องเที่ยงแท้"},{icon:"🛡️",title:"ไว้ใจได้",desc:"มั่นคง น่าเชื่อถือ"}]},
 
 mania:{class:"mania",color:"#8e24aa",mainColor:"#a855f7",title:"MANIA",tagline:"The Passionate Powerhouse",img:"ม่วง.png",
-personality:"คุณคือ \"หนูนักโต้วาทีสายปลุกใจ\"",
+personality:"คุณคือ \"หนูนักพูดสายปลุกใจ\"",
 personalityDesc:"การพูดที่ไม่ใส่อารมณ์ ก็เหมือนแกงที่ไม่ใส่พริก! คุณคือตัวจี๊ดที่พร้อมจะใส่จิตวิญญาณเพื่อกระตุ้นความรู้สึกคนฟังให้ลุกเป็นไฟ พร้อมสร้างประเด็นที่คนต้องเอาไปพูดต่อจนขึ้นเทรนด์",
-strengths:[{icon:"🔥",title:"สร้างกระแส",desc:"พลังเต็มท่า"},{icon:"❤️",title:"ปลุกอารมณ์",desc:"หลงใหลจริงใจ"},{icon:"⚔️",title:"เป็นไวรัล",desc:"ไม่ยอมแพ้"}],
-archetypes:[{name:"พี่เต้พระราม7",img:"พี่เต้.jpg"},{name:"ดาด้า มิสแกรนด์กาฬสินธุ์",img:"ดาด้า.jpg"},{name:"ครูเงาะ",img:"ครูเงาะ.jpg"}]},
+strengths:[{icon:"🔥",title:"สร้างกระแส",desc:"พลังเต็มท่า"},{icon:"❤️",title:"ปลุกอารมณ์",desc:"หลงใหลจริงใจ"},{icon:"⚔️",title:"เป็นไวรัล",desc:"ไม่ยอมแพ้"}]},
 
 pragma:{class:"pragma",color:"#43a047",mainColor:"#22c55e",title:"PRAGMA",tagline:"The Rational Architect",img:"เขียว.png",
-personality:"คุณคือ \"หนูนักโต้วาทีสายเหตุผล\"",
+personality:"คุณคือ \"หนูนักพูดสายเหตุผล\"",
 personalityDesc:"ทุกคำพูดมีที่มา ทุกเนื้อหาเป๊ะตามโครงสร้าง คุณคือสถาปนิกทางความคิดที่วางข้อมูลแบบเป็นขั้นเป็นตอน ไม่พูดลอยๆแต่จะทำให้คุณเห็นภาพรวมด้วยเหตุและผลที่เถียงไม่ออก ถ้าอยากได้เนื้อหาแน่นๆ ข้อมูลเน้นๆ ต้องยกให้คุณเลย",
-strengths:[{icon:"⚖️",title:"ข้อมูลแน่น",desc:"ดุลยภาค และเป็นธรรม"},{icon:"🔍",title:"ตรรกะเป๊ะ",desc:"วิเคราะห์อย่างลึก"},{icon:"📊",title:"เน้นโครงสร้าง",desc:"ใช้เหตุผล"}],
-archetypes:[{name:"พี่วิว Point of View",img:"พี่วิว.jpg"},{name:"เฮียวิทย์",img:"เฮียวิทย์.jpg"},{name:"พี่ปั้น SmartMathPro",img:"พี่ปั้น.jpg"}]},
+strengths:[{icon:"⚖️",title:"ข้อมูลแน่น",desc:"ดุลยภาค และเป็นธรรม"},{icon:"🔍",title:"ตรรกะเป๊ะ",desc:"วิเคราะห์อย่างลึก"},{icon:"📊",title:"เน้นโครงสร้าง",desc:"ใช้เหตุผล"}]},
 
 agape:{class:"agape",color:"#fb8c00",mainColor:"#fb923c",title:"AGAPE",tagline:"The Inspiring Idealist",img:"ส้ม.png",
-personality:"คุณคือ \"หนูนักโต้วาทีสายสร้างแรงบันดาลใจ\"",
+personality:"คุณคือ \"หนูนักพูดสายสร้างแรงบันดาลใจ\"",
 personalityDesc:"พูดเพื่อสร้าง ไม่ใช่เพื่อทำลาย คุณคือนักสร้างแรงบันดาลใจที่มาพร้อมพลังบวกมหาศาล เพื่อส่วนรวม ทุกคำพูดคือการให้ที่มุ่งหวังจะเปลี่ยนโลกให้ดีขึ้นและปลุกใจให้ทุกคนลุกขึ้นมาสู้",
-strengths:[{icon:"🌟",title:"สร้างพลังบวก",desc:"แรงบันดาลใจอยู่เสมอ"},{icon:"🎯",title:"แรงบันดาลใจ",desc:"มีเป้าหมายชัดเจน"},{icon:"🤝",title:"เพื่อส่วนรวม",desc:"รวมคนไว้ด้วยกัน"}],
-archetypes:[{name:"ผู้ว่าชัชชาติ",img:"ท่านชัชชาติ.jpg"},{name:"พิมรี่พาย",img:"พิมรี่พาย.jpg"},{name:"พี่ภูผา Mr.Phoops",img:"พี่ภูผา.jpg"}]}
+strengths:[{icon:"🌟",title:"สร้างพลังบวก",desc:"แรงบันดาลใจอยู่เสมอ"},{icon:"🎯",title:"มีเป้าหมาย",desc:"มีเป้าหมายชัดเจน"},{icon:"🤝",title:"เพื่อส่วนรวม",desc:"รวมคนไว้ด้วยกัน"}]}
 };
 
 const r = results[type];
@@ -294,22 +288,11 @@ ${r.strengths.map(s=>`
 </div>
 </div>
 
-<div class="archetypes-section">
-<div class="section-header">
-<span class="icon-spark">✨</span>
-<h2>Archetypes</h2>
-</div>
-<div class="people-grid">
-${r.archetypes.map(p=>`
-<div class="person">
-<img src="${p.img}" class="person-img">
-<p class="person-name">${p.name}</p>
-</div>`).join("")}
-</div>
 </div>
 
-<button class="share-btn" onclick="captureAndShare()">แชร์ผลลัพธ์</button>
-
+<div class="share-buttons-container">
+  <button class="share-btn" onclick="captureAndShare()">แชร์ผลลัพธ์</button>
+  <button class="share-friend-btn" onclick="shareToFriend()">แชร์กับเพื่อน</button>
 </div>
 
 </div>
@@ -324,10 +307,7 @@ async function captureAndShare() {
   const resultCard = document.querySelector('.result-card');
   
   try {
-    // แสดง loading message
     const btn = document.querySelector('.share-btn');
-    const originalText = btn.textContent;
-    btn.textContent = 'กำลังบันทึก...';
     btn.disabled = true;
     
     // Capture รูป result card
@@ -365,7 +345,11 @@ async function captureAndShare() {
   } catch (error) {
     console.error('Error capturing image:', error);
     alert('ขออภัย เกิดข้อผิดพลาดในการบันทึกรูป');
-    btn.textContent = originalText;
     btn.disabled = false;
   }
+}
+
+// ================= SHARE TO FRIEND =================
+function shareToFriend() {
+  window.open('https://www.instagram.com/soc.debate.ku/', '_blank');
 }
