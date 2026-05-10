@@ -291,8 +291,8 @@ ${r.strengths.map(s=>`
 </div>
 
 <div class="share-buttons-container">
-  <button class="share-btn" onclick="captureAndShare()">แชร์ผลลัพธ์</button>
-  <button class="share-friend-btn" onclick="shareToFriend()">แชร์กับเพื่อน</button>
+  <button class="share-btn" onclick="captureAndShare()">บันทึก</button>
+  <button class="share-friend-btn" onclick="shareToFriend()">แชร์ผลลัพธ์</button>
 </div>
 
 </div>
@@ -336,10 +336,8 @@ async function captureAndShare() {
       // ปล่อย URL
       URL.revokeObjectURL(url);
       
-      // หลังจาก 1 วินาที จึงกลับไปหน้าแรก
-      setTimeout(() => {
-        location.reload();
-      }, 1000);
+      // เปิดการใช้งานปุ่มอีกครั้ง
+      btn.disabled = false;
     }, 'image/png');
     
   } catch (error) {
