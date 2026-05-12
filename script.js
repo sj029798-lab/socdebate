@@ -291,8 +291,8 @@ ${r.strengths.map(s=>`
 </div>
 
 <div class="share-buttons-container">
-  <button class="share-btn" onclick="captureAndShare()">บันทึก</button>
-  <button class="share-friend-btn" onclick="shareToFriend()">แชร์ผลลัพธ์</button>
+  <button class="share-btn" onclick="captureAndShare()">แชร์ผลลัพธ์</button>
+  <button class="share-friend-btn" onclick="shareToFriend()">แชร์กับเพื่อน</button>
 </div>
 
 </div>
@@ -305,41 +305,59 @@ nextButton.addEventListener("click",loadNextQuestion);
 // ================= CAPTURE & SHARE =================
 async function captureAndShare() {
   const resultCard = document.querySelector('.result-card');
-  
+  const btn = document.querySelector('.share-btn');
+
   try {
-    const btn = document.querySelector('.share-btn');
     btn.disabled = true;
-    
-    // Capture รูป result card
+
     const canvas = await html2canvas(resultCard, {
       backgroundColor: '#ffffff',
       scale: 2,
       useCORS: true,
       logging: false
     });
-    
-    // แปลง canvas เป็น image
-    canvas.toBlob(function(blob) {
-      // สร้าง URL จาก blob
-      const url = URL.createObjectURL(blob);
-      
-      // สร้าง download link
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `debate-personality-${new Date().getTime()}.png`;
-      
-      // Click link เพื่อ download
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      // ปล่อย URL
-      URL.revokeObjectURL(url);
-      
-      // เปิดการใช้งานปุ่มอีกครั้ง
+
+    canvas.toBlob(async function(blob) {
+      if (!blob) {
+        throw new Error('Blob creation failed');
+      }
+
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      const filename = `debate-personality-${new Date().getTime()}.png`;
+      const file = new File([blob], filename, { type: 'image/png' });
+
+      if (isIOS && navigator.canShare && navigator.canShare({ files: [file] })) {
+        try {
+          await navigator.share({
+            files: [file],
+            title: 'Debate Personality Result',
+            text: 'บันทึกภาพผลลัพธ์จากแบบทดสอบ'
+          });
+        } catch (shareError) {
+          console.warn('Share API failed, falling back to open image:', shareError);
+          const url = URL.createObjectURL(blob);
+          window.open(url, '_blank');
+          alert('กดค้างที่ภาพ แล้วเลือก "บันทึกภาพ" เพื่อเก็บลงแกลเลอรี่');
+          URL.revokeObjectURL(url);
+        }
+      } else if (isIOS) {
+        const url = URL.createObjectURL(blob);
+        window.open(url, '_blank');
+        alert('กดค้างที่ภาพ แล้วเลือก "บันทึกภาพ" เพื่อเก็บลงแกลเลอรี่');
+        URL.revokeObjectURL(url);
+      } else {
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      }
+
       btn.disabled = false;
     }, 'image/png');
-    
   } catch (error) {
     console.error('Error capturing image:', error);
     alert('ขออภัย เกิดข้อผิดพลาดในการบันทึกรูป');
