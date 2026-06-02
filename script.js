@@ -235,7 +235,7 @@ strengths:[{icon:"📚",title:"จริงใจ",desc:"ความรู้�
 
 mania:{class:"mania",color:"#8e24aa",mainColor:"#a855f7",title:"MANIA",tagline:"The Passionate Powerhouse",img:"ม่วง.png",
 personality:"คุณคือ \"หนูนักพูดสายปลุกใจ\"",
-personalityDesc:"การพูดที่ไม่ใส่อารมณ์ ก็เหมือนแกงที่ไม่ใส่พริก! คุณคือตัวจี๊ดที่พร้อมจะใส่จิตวิญญาณเพื่อกระตุ้นความรู้สึกคนฟังให้ลุกเป็นไฟ พร้อมสร้างประเด็นที่คนต้องเอาไปพูดต่อจนขึ้นเทรนด์",
+personalityDesc:"การพูดที่ไม่ใส่อารมณ์ ก็เหมือนส้มตำที่ไม่ใส่พริก! คุณคือตัวจี๊ดที่พร้อมจะใส่จิตวิญญาณเพื่อกระตุ้นความรู้สึกคนฟังให้ลุกเป็นไฟ พร้อมสร้างประเด็นที่คนต้องเอาไปพูดต่อจนขึ้นเทรนด์",
 strengths:[{icon:"🔥",title:"สร้างกระแส",desc:"พลังเต็มท่า"},{icon:"❤️",title:"ปลุกอารมณ์",desc:"หลงใหลจริงใจ"},{icon:"⚔️",title:"เป็นไวรัล",desc:"ไม่ยอมแพ้"}]},
 
 pragma:{class:"pragma",color:"#43a047",mainColor:"#22c55e",title:"PRAGMA",tagline:"The Rational Architect",img:"เขียว.png",
